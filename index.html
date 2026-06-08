@@ -1,149 +1,269 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>생명과학 진로와 생태 조사</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>생명과학 진로와 생태 조사</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'맑은 고딕', sans-serif;
+    line-height:1.8;
+    background-color:#f4f7f9;
+    color:#333;
+}
+
+header{
+    background:linear-gradient(135deg,#2e8b57,#4caf50);
+    color:white;
+    text-align:center;
+    padding:50px 20px;
+}
+
+header h1{
+    font-size:2.5rem;
+    margin-bottom:10px;
+}
+
+nav{
+    background:white;
+    box-shadow:0 2px 8px rgba(0,0,0,0.1);
+    position:sticky;
+    top:0;
+}
+
+nav ul{
+    display:flex;
+    justify-content:center;
+    list-style:none;
+}
+
+nav li{
+    margin:15px;
+}
+
+nav a{
+    text-decoration:none;
+    color:#2e8b57;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:#1b5e20;
+}
+
+main{
+    width:85%;
+    max-width:1100px;
+    margin:auto;
+}
+
+section{
+    background:white;
+    margin:30px 0;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 2px 10px rgba(0,0,0,0.08);
+}
+
+h2{
+    color:#2e8b57;
+    margin-bottom:15px;
+    border-left:6px solid #4caf50;
+    padding-left:10px;
+}
+
+.card-container{
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.card{
+    flex:1;
+    min-width:250px;
+    background:#f8fff8;
+    padding:20px;
+    border-radius:10px;
+    border-left:5px solid #4caf50;
+}
+
+.card h3{
+    color:#2e8b57;
+    margin-bottom:10px;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:20px;
+}
+
+table th{
+    background:#4caf50;
+    color:white;
+    padding:12px;
+}
+
+table td{
+    padding:12px;
+    border:1px solid #ddd;
+    text-align:center;
+}
+
+table tr:nth-child(even){
+    background:#f5f5f5;
+}
+
+footer{
+    text-align:center;
+    background:#2e8b57;
+    color:white;
+    padding:20px;
+    margin-top:30px;
+}
+</style>
+
 </head>
 
 <body>
 
-    <!-- 헤더 -->
-    <header>
-        <h1>생명과학 진로와 생태 조사</h1>
-        <p>방형구법, 우점종, 핵심종, 지표종을 통해 알아보는 생명과학 진로</p>
-    </header>
+<header>
+    <h1>생명과학 진로와 생태 조사</h1>
+    <p>방형구법과 생태계 구성 요소를 통해 알아보는 생명과학 진로</p>
+</header>
 
-    <!-- 메뉴 -->
-    <nav>
-        <ul>
-            <li><a href="#career">진로 소개</a></li>
-            <li><a href="#quadrat">방형구법</a></li>
-            <li><a href="#dominant">우점종</a></li>
-            <li><a href="#keystone">핵심종</a></li>
-            <li><a href="#indicator">지표종</a></li>
-        </ul>
-    </nav>
+<nav>
+    <ul>
+        <li><a href="#career">진로 소개</a></li>
+        <li><a href="#quadrat">방형구법</a></li>
+        <li><a href="#compare">생물종 비교</a></li>
+    </ul>
+</nav>
 
-    <!-- 메인 콘텐츠 -->
-    <main>
+<main>
 
-        <!-- 진로 소개 -->
-        <section id="career">
-            <h2>생명과학 관련 진로</h2>
+<section id="career">
+    <h2>생명과학 관련 진로</h2>
 
-            <article>
-                <h3>생태학자</h3>
-                <p>
-                    생태학자는 생물과 환경의 상호작용을 연구하는 과학자이다.
-                    생태계의 구조와 기능을 조사하고 생물 다양성 보전에 기여한다.
-                </p>
-            </article>
+    <div class="card-container">
 
-            <article>
-                <h3>환경생물학자</h3>
-                <p>
-                    환경 오염이 생물에게 미치는 영향을 연구하고 환경 보전 방안을 제시한다.
-                </p>
-            </article>
-
-            <article>
-                <h3>생태복원 전문가</h3>
-                <p>
-                    훼손된 생태계를 복원하기 위해 생물종과 환경 조건을 분석하고 복원 계획을 수립한다.
-                </p>
-            </article>
-        </section>
-
-        <!-- 방형구법 -->
-        <section id="quadrat">
-            <h2>방형구법</h2>
-
+        <div class="card">
+            <h3>생태학자</h3>
             <p>
-                방형구법은 일정한 크기의 정사각형 구역(방형구)을 설정하여
-                그 안에 서식하는 생물의 종류와 개체 수를 조사하는 방법이다.
+                생물과 환경의 상호작용을 연구하며 생태계의 구조와 기능을 분석한다.
             </p>
+        </div>
 
-            <h3>활용 목적</h3>
-            <ul>
-                <li>식물 군집 조사</li>
-                <li>종 다양성 분석</li>
-                <li>생태계 변화 관찰</li>
-            </ul>
-
-            <h3>진로 연계</h3>
+        <div class="card">
+            <h3>환경생물학자</h3>
             <p>
-                생태학자와 환경생물학자는 방형구법을 이용하여 생태계의 건강 상태를 평가한다.
+                환경오염이 생물에게 미치는 영향을 연구하고 환경 보전 방안을 제시한다.
             </p>
-        </section>
+        </div>
 
-        <!-- 우점종 -->
-        <section id="dominant">
-            <h2>우점종</h2>
-
+        <div class="card">
+            <h3>생태복원 전문가</h3>
             <p>
-                우점종은 특정 지역에서 개체 수나 생물량이 가장 많아
-                생태계에 큰 영향을 미치는 종을 말한다.
+                훼손된 생태계를 조사하고 복원 계획을 수립하여 생물다양성을 보전한다.
             </p>
+        </div>
 
-            <h3>예시</h3>
-            <p>
-                소나무 숲에서는 소나무가 우점종이 될 수 있다.
-            </p>
+    </div>
+</section>
 
-            <h3>진로 연계</h3>
-            <p>
-                산림생태학자는 우점종을 분석하여 숲의 구조와 변화를 연구한다.
-            </p>
-        </section>
+<section id="quadrat">
+    <h2>방형구법</h2>
 
-        <!-- 핵심종 -->
-        <section id="keystone">
-            <h2>핵심종</h2>
+    <p>
+        방형구법은 일정한 면적을 정해 그 안에 존재하는 생물의 종류와 개체 수를 조사하는 방법이다.
+        식물 군집 연구, 종 다양성 분석, 우점종 확인 등에 널리 사용된다.
+    </p>
 
-            <p>
-                핵심종은 개체 수는 많지 않더라도 생태계 전체에 매우 큰 영향을 미치는 종이다.
-            </p>
+    <br>
 
-            <h3>예시</h3>
-            <p>
-                해달은 성게 개체 수를 조절하여 해조류 숲을 유지하는 핵심종이다.
-            </p>
+    <h3>방형구법 조사 과정</h3>
+    <ol>
+        <li>조사 구역 선정</li>
+        <li>방형구 설치</li>
+        <li>종과 개체 수 기록</li>
+        <li>출현 빈도 및 우점도 분석</li>
+        <li>생태계 상태 평가</li>
+    </ol>
+</section>
 
-            <h3>진로 연계</h3>
-            <p>
-                보전생물학자는 핵심종 보호를 통해 생태계 안정성을 유지하는 연구를 수행한다.
-            </p>
-        </section>
+<section id="compare">
+    <h2>우점종 · 핵심종 · 지표종 비교</h2>
 
-        <!-- 지표종 -->
-        <section id="indicator">
-            <h2>지표종</h2>
+    <table>
+        <tr>
+            <th>구분</th>
+            <th>정의</th>
+            <th>특징</th>
+            <th>예시</th>
+            <th>활용 분야</th>
+        </tr>
 
-            <p>
-                지표종은 특정 환경의 상태를 알려주는 생물종이다.
-            </p>
+        <tr>
+            <td><strong>우점종</strong></td>
+            <td>개체 수 또는 생물량이 가장 많은 종</td>
+            <td>군집의 외형과 특징을 결정</td>
+            <td>소나무 숲의 소나무</td>
+            <td>군집 구조 분석</td>
+        </tr>
 
-            <h3>예시</h3>
-            <ul>
-                <li>이끼류 → 대기 오염 정도 평가</li>
-                <li>하루살이 유충 → 수질 상태 평가</li>
-            </ul>
+        <tr>
+            <td><strong>핵심종</strong></td>
+            <td>개체 수는 적지만 영향력이 큰 종</td>
+            <td>생태계 균형 유지</td>
+            <td>해달, 불가사리</td>
+            <td>생물다양성 보전</td>
+        </tr>
 
-            <h3>진로 연계</h3>
-            <p>
-                환경생물학자는 지표종을 활용하여 환경 오염 정도를 조사한다.
-            </p>
-        </section>
+        <tr>
+            <td><strong>지표종</strong></td>
+            <td>환경 상태를 나타내는 종</td>
+            <td>오염 및 환경 변화를 반영</td>
+            <td>이끼류, 하루살이 유충</td>
+            <td>환경 모니터링</td>
+        </tr>
+    </table>
 
-    </main>
+    <br>
 
-    <!-- 푸터 -->
-    <footer>
-        <p>제작자 : 생명과학 진로를 희망하는 고등학생</p>
-        <p>교과 연계 : 생태계 조사와 생물 다양성</p>
-    </footer>
+    <h3>생명과학 진로와의 연계</h3>
+
+    <ul>
+        <li><strong>생태학자</strong> → 방형구법과 우점종 분석을 통해 군집 구조 연구</li>
+        <li><strong>보전생물학자</strong> → 핵심종 보호를 통한 생태계 보전 연구</li>
+        <li><strong>환경생물학자</strong> → 지표종을 활용한 환경 오염 평가</li>
+        <li><strong>생태복원 전문가</strong> → 조사 결과를 기반으로 복원 계획 수립</li>
+    </ul>
+
+</section>
+
+<section>
+    <h2>탐구 활동의 의의</h2>
+
+    <p>
+        방형구법을 통해 생태계의 종 분포를 조사하고 우점종, 핵심종, 지표종을 분석하면
+        생태계가 어떻게 유지되는지 이해할 수 있다. 이러한 탐구 과정은 생태학자,
+        환경생물학자, 생태복원 전문가와 같은 생명과학 분야 진로를 이해하는 데 도움을 준다.
+    </p>
+</section>
+
+</main>
+
+<footer>
+    <p>2026 생명과학 진로 탐구 프로젝트</p>
+    <p>방형구법과 생태계 분석을 통한 진로 탐색</p>
+</footer>
 
 </body>
 </html>
